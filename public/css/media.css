@@ -1,0 +1,16 @@
+@media screen and (min-width:300px) {
+  #HmNav {
+    margin: 0 auto;
+  }
+  #HmNavHeader {
+    text-align: center
+  }
+  .welcome {
+    margin-top: -145px;
+  }
+}
+@media screen and (min-width:998px){
+  .welcome {
+    margin-top: -350px;
+  }
+}
