@@ -13,6 +13,7 @@
     font-weight: bold;
     color: #fff;
 	}
+  .nav-tabs>li>a:hover {color:#000;}
   .nav-tabs {margin: 3.5px;}
 }
 @media screen and (min-width:998px){

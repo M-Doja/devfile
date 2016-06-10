@@ -55,6 +55,7 @@
   #section4 {padding-top:50px;padding-bottom:100px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
 		 /*background-color: #00bcd4;*/
 	 }
+	 #section4 form {margin: 0 auto;padding: 20px;}
 	 #section4 p {
 		 margin-top: 40px;
 	 }
@@ -75,12 +76,12 @@
   </style>
 </head>
 <!-- <body data-spy="scroll" data-target=".navbar" data-offset="50" id="BodyWrap"> -->
-<body data-spy="scroll" data-target="#navbar-example" id="BodyWrap">
+<body data-spy="scroll" data-target="#navbar-example" id="BodyWrap" class="flex-container">
   <div id="navbar-example" class="navbar navbar-fixed-top">
     <ul class="nav nav-tabs" role="tablist">
 			<li><a href="#section1">About</a></li>
 			<li><a href="#section2">Projects</a></li>
-			<li><a href="#section3">Blog</a></li>
+			<!-- <li><a href="#section3">Blog</a></li> -->
 			 <li><a href="#section4">Contact</a></li>
     </ul>
   </div>
@@ -112,7 +113,7 @@
 		 <!-- <p>JavaScript Technician</p> -->
 	 </header>
 </div>
-<article class="container">
+<article class="container flex-item">
 	<div id="section1" class="container-fluid">
 	  <h1>Web Developer</h1>
 		<h3>Southern California Area</h3><hr class="hr-blk">
@@ -121,7 +122,7 @@
 	  <p>From Learning on my own some years ago, to graduating from a Bay Area tech school, then on to working with clients on freelance projects, my passion, knowledge, and experience for creating scalable applications has only grown deeper. Even though I enjoy building applications end to end, some of my strongest skills involve HTML5, CSS3, Jquery, Angular.JS, Express.JS, Firebase, and MongoDB. Sometimes I even find myself developing with mySQL and PHP for WordPress and theme development.</p>
 		<p>When I'm not on the computer coding away like a zombie, As a musician I love to get out to a nice open mic music jam session or music venue. I'm also into outdoor activities like hiking, biking, chilling at the beach on the pier. Just overall enjoying the California environment with my friends. I love travelling to new places and meeting new people so I'm constantly networking from music groups to web development Meet Ups and everything in between, so feel free to contact me if you have any questions, comments, critiques, or ideas!</p>
 	</div>
-	<div id="section2" class="container-fluid clearfix">
+	<div id="section2" class="container-fluid clearfix flex-item">
 	  <h1>My Projects</h1>
 		<section id="proj">
 			<div class="figs" style="text-align:center;margin: auto;">
@@ -141,16 +142,16 @@
 		</section>
 
 	</div>
-	<!-- <div id="section3" class="container-fluid">
+	<!-- <div id="section3" class="container-fluid flex-item">
 	  <h1>Blog</h1>
 	  <p>On my blog I talk about everything from the latest front end tech to experiences as a musicican on the stage. Feel free to check the <a href="/blog_temp/blogHm.html">blog</a> to see what I'm currently working on.</p>
 	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 	</div> -->
-	<div id="section4" class="container-fluid">
+	<div id="section4" class="container-fluid flex-item">
 	  <h1>Contact Me</h1>
 	  <p>Currently I reside in the sunny Southern California coastal city of Oxnard! </p>
 		<div class="cform">
-			<form class='clearfix' style="background-color:rgba(255,255,255,0.6);max-width:400px;padding:20px;text-align:center;margin:5% auto;font-family:serif;border-radius:10px;">
+			<form class=''>
 				<h1 style="color:black;font-family:serif;">Send Me A Message!</h1>
 				<!-- <input id="from" type="text" placeholder="Enter E-mail ID where you want to send" /><br><br> -->
 				<input id="subject" type="text" placeholder="Subject" /><br><br>
