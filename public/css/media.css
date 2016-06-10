@@ -8,9 +8,18 @@
   .welcome {
     margin-top: -145px;
   }
+  .nav-tabs>li>a {
+		font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+	}
+  .nav-tabs {margin: 3.5px;}
 }
 @media screen and (min-width:998px){
   .welcome {
     margin-top: -350px;
   }
+  .nav-tabs>li>a {
+		font-size: 1.5em;
+	}
 }
