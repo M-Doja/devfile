@@ -118,13 +118,14 @@ function getBlogs(){
     for (var prop in res){
       res[prop]._id = prop;
       blogs.push(res[prop]);
-      elemStr += "<br><li><span id='BlogTitle'>" + res[prop].title + "</span><br>"
-      + "<img class='img-responsive' src='"+res[prop].pic +"'><br>"
-      + "Summary:  "+ res[prop].description + "<br>"
-      + "Author: <b>" + res[prop].author + "</b><br>"
-      + "Published: " +  res[prop].date + "<br><br>" +  res[prop].body + "<br><br>"
+      elemStr += "<br><li><div id='BlogTitle'><h1 style='text-align:center;'>" + res[prop].title + "</h1></div><br>"
+      + "<img style='margin:auto;' class='img-responsive' src='"+res[prop].pic +"'><br><div style='margin:auto; text-align:center'>"
+      + "<b>Summary:</b>  "+ res[prop].description + "<br>"
+      + "<b>Author: </b>" + res[prop].author + "</b><br>"
+      + "<b>Published:</b> " +  res[prop].date + "<br><br>"
+      + "<button data-toggle='collapse' data-target='#post01' aria-expanded='false' aria-controls='post01'>Read Post</button><div class='collapse' id='post01'>" + res[prop].body + "</div><br><br>"
       + "<button style='margin-bottom:40px;' class='btn btn-warning btn-sm editBtn' onclick='startEdit(" + (blogs.length - 1) + ")'>Edit</button>"
-      + "</li><a href='#'>Top</a><hr class='hr'>"
+      + "</div></li><a href='#'>Top</a><hr class='hr'>"
       $("#blogMessage").hide();
       $("#buttonsGoHere").html('');
     }

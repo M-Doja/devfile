@@ -52,10 +52,18 @@ ul li{list-style: none; display: inline;}
 }
 .main-blog-nav li a {
     color: #fff;
+    font-size: 1.3em;
 }
 .modal {
   text-align: center;
 }
 .modal-content {
   padding: .75em;
+}
+.contact-modal-sm .modal-content,
+.about-modal-sm .modal-content {
+  font-size:1.2em;
+}
+.contact-modal-sm .modal-content {
+  font-weight: bold;
 }
