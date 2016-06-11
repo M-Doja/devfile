@@ -27,37 +27,37 @@
   }
 	ul li {list-style: none;display: inline-block;top:0 position:fixed;}
 	article {margin: 0 auto;text-align: center;}
-	#section1 h1,
-	#section2 h1,
-	#section3 h1,
-	#section4 h1 {
+	.section1 h1,
+	.section2 h1,
+	.section3 h1,
+	.section4 h1 {
 		/*padding-top: 2em;*/
 	}
-	#section1 a,
-	#section2 a,
-	#section3 a,
-	#section4 a {
+	.section1 a,
+	.section2 a,
+	.section3 a,
+	.section4 a {
 
 	}
 	.nav-tabs>li>a {
 		/*font-size: 1.05em;*/
 		margin-left: 1.5px;
 	}
-  #section1 {padding:120px 15px 50px 15px;min-height:500px;color: #000;text-align:left;font-size: 1.5em;margin: 0 auto;
+  .section1 {padding:120px 15px 50px 15px;min-height:500px;color: #000;text-align:left;font-size: 1.5em;margin: 0 auto;
 		 /*background-color: #1E88E5;*/
 	 }
 
-  #section2 {padding-top:50px;padding-bottom:150px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
+  .section2 {padding-top:50px;padding-bottom:150px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
 		 /*background-color: #673ab7;*/
 	 }
-  #section3 {padding-top:50px;padding-bottom:150px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
+  .section3 {padding-top:50px;padding-bottom:150px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
 		 /*background-color: #ff9800;*/
 	 }
-  #section4 {padding-top:50px;padding-bottom:100px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
+  .section4 {padding-top:50px;padding-bottom:100px;min-height:500px;color: #000;text-align: center;font-size: 1.5em;margin: 0 auto;
 		 /*background-color: #00bcd4;*/
 	 }
-	 #section4 form {margin: 0 auto;padding: 20px;}
-	 #section4 p {
+	 .section4 form {margin: 0 auto;padding: 20px;}
+	 .section4 p {
 		 margin-top: 40px;
 	 }
 	#selfPic {
@@ -74,16 +74,27 @@
 	#navbar-example {
 		background: rgba(0, 0, 0, 0.8);
 	}
+	.img-group {
+		margin: 50px auto;
+	}
+	.icon {
+		background: #000;
+		transition: all .3s ease;
+		margin: .5em;
+	}
+	.icon:hover {
+		border-radius: 50%;
+	}
   </style>
 </head>
 <!-- <body data-spy="scroll" data-target=".navbar" data-offset="50" id="BodyWrap"> -->
 <body data-spy="scroll" data-target="#navbar-example" id="BodyWrap" class="flex-container">
   <div id="navbar-example" class="navbar navbar-fixed-top">
     <ul class="nav nav-tabs" role="tablist">
-			<li><a href="#section1">About</a></li>
-			<li><a href="#section2">Projects</a></li>
-			<!-- <li><a href="#section3">Blog</a></li> -->
-			 <li><a href="#section4">Contact</a></li>
+			<li><a href="#About">About</a></li>
+			<li><a href="#Projects">Projects</a></li>
+			<li><a href="#Blog">Blog</a></li>
+			 <li><a href="#Contact">Contact</a></li>
     </ul>
   </div>
 
@@ -106,7 +117,7 @@
 	<!-- <img  src="http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png" width="150" alt="" /> -->
 
 <article class="container flex-item">
-	<div id="section1" class="container-fluid">
+	<div id="About" class="section1 container-fluid">
 	  <h1>Web Developer</h1>
 		<h3>Southern California Area</h3><hr class="hr-blk">
 		 <img id="selfPic"src="images/me.jpg" width="200" alt="self-portrait" />
@@ -114,7 +125,7 @@
 	  <p>From Learning on my own some years ago, to graduating from a Bay Area tech school, then on to working with clients on freelance projects, my passion, knowledge, and experience for creating scalable applications has only grown deeper. Even though I enjoy building applications end to end, some of my strongest skills involve HTML5, CSS3, Jquery, Angular.JS, Express.JS, Firebase, and MongoDB. Sometimes I even find myself developing with mySQL and PHP for WordPress and theme development.</p>
 		<p>When I'm not on the computer coding away like a zombie, As a musician I love to get out to a nice open mic music jam session or music venue. I'm also into outdoor activities like hiking, biking, chilling at the beach on the pier. Just overall enjoying the California environment with my friends. I love travelling to new places and meeting new people so I'm constantly networking from music groups to web development Meet Ups and everything in between, so feel free to contact me if you have any questions, comments, critiques, or ideas!</p>
 	</div>
-	<div id="section2" class="container-fluid clearfix flex-item">
+	<div id="Projects" class="section2 container-fluid clearfix flex-item">
 	  <h1>My Projects</h1>
 		<section id="proj">
 			<div class="figs" style="text-align:center;margin: auto;">
@@ -134,14 +145,23 @@
 		</section>
 
 	</div>
-	<!-- <div id="section3" class="container-fluid flex-item">
+	<div id="Blog" class="section3 container-fluid flex-item">
 	  <h1>Blog</h1>
-	  <p>On my blog I talk about everything from the latest front end tech to experiences as a musicican on the stage. Feel free to check the <a href="/blog_temp/blogHm.html">blog</a> to see what I'm currently working on.</p>
-	  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-	</div> -->
-	<div id="section4" class="container-fluid flex-item">
+	  <p>On my blog I talk about everything from special projects , experimenting with the latest front end tech, to experiences as a musicican on the stage. Feel free to check the <a href="/micah_blog/Blog_Home.html">blog</a> to see what I'm currently working on.</p>
+
+	</div>
+	<div id="Contact" class="section4 container-fluid flex-item">
 	  <h1>Contact Me</h1>
 	  <p>Currently I reside in the sunny Southern California coastal city of Oxnard! If you have any ideas, suggestions or questions you can always reach me via email <a href="mailto:dojadeveloper@gmail.com?" target="_top">here</a></p>
+
+
+		<div class="img-group">
+			<p>Follow Me</p>
+			<a href="https://twitter.com/TheRealMicDoja" target="_blank"><img class="icon" src="../images/TW_icon.png" width="50" alt="Twitter Icon" /></a>
+			<a href="https://github.com/M-Doja" target="_blank"><img class="icon" src="../images/Gh_icon.png" width="50" alt="Github Icon" /></a>
+			<a href="https://www.facebook.com/devdoja" target="_blank"><img class="icon" src="../images/FB_icon.png" width="50" alt="Facebook Icon" /></a>
+			<a href="https://www.linkedin.com/in/micahdunson" target="_blank"><img class="icon" src="../images/LK_icon.png" width="50" alt="LinkedIn Icon" /></a>
+		</div>
 		<!-- <div class="cform">
 			<form class=''>
 				<h1 style="color:black;font-family:serif;">Send Me A Message!</h1> -->

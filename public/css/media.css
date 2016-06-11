@@ -1,5 +1,5 @@
 .logo {
-  background:rgba(0,0,0,0.5);padding:.235em;display:block;text-align:center;margin: -150px auto;
+  background:rgba(0,0,0,0.8);padding:.235em;display:block;text-align:center;margin: -150px auto;
 }
 .logo-sm {
   text-align: center;
@@ -17,10 +17,10 @@
     display: none;
     opacity: 0;
   }
-  #section1 h1 {
+  .section1 h1 {
     padding-top: .235em;
   }
-  #section1 {
+  .section1 {
     padding-top: 25px;
   }
   /*article {
@@ -52,7 +52,7 @@
     display: none;
     opacity: 0;
   }
-  #section1 h1 {
+  .section1 h1 {
     padding-top: 2em;
   }
 }
