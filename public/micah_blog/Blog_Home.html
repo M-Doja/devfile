@@ -18,6 +18,7 @@
     <div class="container">
       <div class="main-blog-nav">
         <ul>
+          <li><a href="#" data-toggle="modal" data-target=".about-modal-sm">About</a></li>
           <li><a href="#" data-toggle="modal" data-target=".contact-modal-sm">Contact</a></li>
           <li><a href="../#/">Home</a></li>
         </ul>
@@ -32,12 +33,55 @@
       </div>
     </div>
   </div>
+  <!-- About modal -->
+  <div class="modal fade about-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class=" col-lg-4 blog-sidebar">
+          <div class="">
+            <h2>About Me</h2><hr>
+            <!-- <ul> -->
+
+              <p><strong>Born In:</strong> Ohio</p>
+              <p><strong>Living In:</strong> Southern California</p>
+              <p><strong>Specialize In:</strong> Front-End, JavaScript, Angular JS </p>
+              <p><strong>Hobbies:</strong> Music Production, Hiking, Networking Events, Beer Tasting, Painting, and of course coding.</p>
+            <!-- </ul> -->
+            <p>When Im not working with new front end technologies on a project, or reading a blog or article to keep <span data-toggle="collapse"data-target="#blogForm">sharp</span> and informed about this ever changing field, you can find me relaxing to some music, maybe playing a video game or hanging with friends. </p><hr>
+            <!-- <div class="sidebar-module">
+              <h4 style="margin-top:40px;">Archives</h4>
+                <p><a href="#">March 2014</a></p>
+                <p><a href="#">February 2014</a></p>
+                <p><a href="#">January 2014</a></p>
+                <p><a href="#">December 2013</a></p>
+                <p><a href="#">November 2013</a></p>
+                <p><a href="#">October 2013</a></p>
+                <p><a href="#">September 2013</a></p>
+                <p><a href="#">August 2013</a></p>
+                <p><a href="#">July 2013</a></p>
+                <p><a href="#">June 2013</a></p>
+                <p><a href="#">May 2013</a></p>
+                <p><a href="#">April 2013</a></p>
+            </div> -->
+            <div class="sidebar-module">
+              <h4 style="margin-top:60px;">Links</h4>
+                <p><a href="https://github.com/M-Doja" target="_blank">GitHub</a></p>
+                <p><a href="https://twitter.com/TheRealMicDoja" target="_blank">Twitter</a></p>
+                <p><a href="https://www.facebook.com/devdoja" target="_blank">Facebook</a></p>
+                <p><a href="https://www.linkedin.com/in/micahdunson" target="_blank">LinkedIn</a></p>
+            </div>
+          </div>
+        </div><!-- /.blog-sidebar -->
+      </div>
+    </div>
+  </div>
+
 
 </div>
     <div class="container" style="background-color:#fff;">
 
       <div  class="row">
-        <div class="blog-header text-center col-xs-12">
+        <div class="blog-header text-center col-lg-12">
           <img id="blogPic" src="https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/13417422_207172119676699_5784423325188857863_n.jpg?oh=f36700ed3543178e0bb9f96596094d59&oe=580F045F" class="img-responsive" width='280' alt="black and white self portrait" />
           <h1 class="blog-title"> Micah Dunson</h1>
           <h3 class="blog-header text-center ">MEAN Developer & JavaScript Advocate</h3>
@@ -47,16 +91,10 @@
 
 
 
-      <!-- BLOG CONTROLS BUTTONS-->
-      <!-- <div id="ctrlBtn"> -->
-        <!-- <a class="btn btn-danger" type="button" data-toggle="collapse" data-target="#blogForm"><img src="../images/newPost.png" width='50' alt="" /><p style="color:white">Add Post</p></a> -->
-        <!-- <a style='width:83px;' id='delBtn' class="btn btn-danger" onclick="deleteBlogs()"><img src="../images/trash.png" width='50' alt="" /><p style="color:white">Delete</p></a> -->
-      <!-- </div> -->
-
       <!-- ADD BLOG FORM -->
 
       <div class="row text-center">
-        <div class="col-xs-12 text-center">
+        <div class="col-lg-12 text-center">
           <div id='blogForm'class="collapse">
             <p id='blogMessage'></p>
 
@@ -96,7 +134,7 @@
 
       <!-- DISPLAY PAGE BODY -->
       <div class="row">
-        <div class="col-sm-8 blog-main">
+        <div class="col-lg-12 blog-main">
 
             <!-- BLOG DISPLAY DIV -->
           <ul style="background-color:white;padding-right:40px;" id='blogs' class='form-inline element'></ul>
@@ -131,41 +169,7 @@
         </div><!-- /.blog-main -->
 
           <!-- SIDEBAR  -->
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About Me</h4>
-            <!-- <ul> -->
 
-              <p><strong>Born In:</strong> Ohio</p>
-              <p><strong>Living In:</strong> Southern California</p>
-              <p><strong>Specialize In:</strong> Front-End, JavaScript, Angular JS </p>
-              <p><strong>Hobbies:</strong> Music Production, Hiking, Networking Events, Beer Tasting, Painting, and of course coding.</p>
-            <!-- </ul> -->
-            <p>When Im not working with new front end technologies on a project, or reading a blog or article to keep <span data-toggle="collapse"data-target="#blogForm">sharp</span> and informed about this ever changing field, you can find me relaxing to some music, maybe playing a video game or hanging with friends. </p><hr>
-            <!-- <div class="sidebar-module">
-              <h4 style="margin-top:40px;">Archives</h4>
-                <p><a href="#">March 2014</a></p>
-                <p><a href="#">February 2014</a></p>
-                <p><a href="#">January 2014</a></p>
-                <p><a href="#">December 2013</a></p>
-                <p><a href="#">November 2013</a></p>
-                <p><a href="#">October 2013</a></p>
-                <p><a href="#">September 2013</a></p>
-                <p><a href="#">August 2013</a></p>
-                <p><a href="#">July 2013</a></p>
-                <p><a href="#">June 2013</a></p>
-                <p><a href="#">May 2013</a></p>
-                <p><a href="#">April 2013</a></p>
-            </div> -->
-            <div class="sidebar-module">
-              <h4 style="margin-top:60px;">Links</h4>
-                <p><a href="https://github.com/M-Doja" target="_blank">GitHub</a></p>
-                <p><a href="https://twitter.com/TheRealMicDoja" target="_blank">Twitter</a></p>
-                <p><a href="https://www.facebook.com/devdoja" target="_blank">Facebook</a></p>
-                <p><a href="https://www.linkedin.com/in/micahdunson" target="_blank">LinkedIn</a></p>
-            </div>
-          </div>
-        </div><!-- /.blog-sidebar -->
 
 
       </div><!-- /.END OF ROW -->
