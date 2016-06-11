@@ -5,6 +5,11 @@
   text-align: center;
   margin: 150px auto -50px auto;
   background:rgb(0,0,0);
+  display:block;
+}
+.img {
+  display: inline;
+  margin: 0 auto;
 }
 
 @media screen and (max-width:720px){
